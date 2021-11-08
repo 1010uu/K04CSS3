@@ -7,15 +7,59 @@
     <title>Document</title>
 
     <style>
-
+         *{
+            font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold; text-align: center;
+        }
+        div{
+            font-size: 2em; font-weight: bold;
+            text-align: right;
+            color: #373737;
+        }
+        .tb{
+            border: solid 1px darkgray;
+            background-color: #DDDDDD;
+            
+            border-radius: 10px;
+        }
+        .cal1{
+            background-color: #70C738;
+            border-radius: 10px;
+            border: none;
+        }
+        .cal2{
+            background-color: #7B7B7B;
+            border-radius: 10px;
+            border: none;
+        }
+        .cal3{
+            background-color: #373737;
+            border-radius: 10px;
+            border: none;
+        }
+        .cal4{
+            background-color: #FA960A ;
+            border-radius: 10px;
+            border: none;
+        }
+       #button1{
+            border: none; background-color: #7B7B7B;
+           color: #FAFAFA;
+       }
+       #button2{
+           border: none; background-color: #373737;
+           color: #FAFAFA;
+       }
+       #button3{
+        border: none; background-color: #FA960A;
+           color: #FAFAFA;
+       }
 
     </style>
 </head>
 <body>
 
-    <H2>계산기</H2>
-    <table border="1" width=420 height=370
-        style="background-color: #DDDDDD;">
+    <table width=420 height=370 cellspacing="5" class="tb">
 
         <colgroup>
             <col width=25%>
@@ -26,36 +70,37 @@
 
         <!-- 출력창 -->
         <tr>
-            <td colspan="4" class="">여기는 출력결과</td>
+            <td colspan="4" class="cal1">
+                <div>123+456</div></td>
         </tr>
 
         <tr>
-            <td colspan="2">BackSpace</td>
-            <td colspan="2">C</td>   
+            <td colspan="2" class="cal2"><button id="button1">BackSpace</button></td>
+            <td colspan="2" class="cal2"><button id="button1">C</button></td>   
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>/</td>
+            <td class="cal3"><button id="button2">1</button></td>
+            <td class="cal3"><button id="button2">2</button></td>
+            <td class="cal3"><button id="button2">3</button></td>
+            <td class="cal4"><button id="button3">/</button></td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>x</td>
+            <td class="cal3"><button id="button2">4</button></td>
+            <td class="cal3"><button id="button2">5</button></td>
+            <td class="cal3"><button id="button2">6</button></td>
+            <td class="cal4"><button id="button3">*</button></td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>+</td>
+            <td class="cal3"><button id="button2">7</button></td>
+            <td class="cal3"><button id="button2">8</button></td>
+            <td class="cal3"><button id="button2">9</button></td>
+            <td class="cal4"><button id="button3">+</button></td>
         </tr>
         <tr>
-            <td>=</td>
-            <td>0</td>
-            <td>.</td>
-            <td>-</td>
+            <td class="cal3"><button id="button2">=</button></td>
+            <td class="cal3"><button id="button2">0</button></td>
+            <td class="cal3"><button id="button2">.</button></td>
+            <td class="cal4"><button id="button3">-</button></td>
         </tr>
     </table>
     
